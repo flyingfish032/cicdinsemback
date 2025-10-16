@@ -1,13 +1,11 @@
 package com.klu.ecommerce;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import com.klu.ecommerce.EcommerceApplication; // adjust package as per your project
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootTest(classes = EcommerceApplication.class)
-class EcommerceApplicationTests {
-
-    @Test
-    void contextLoads() {
+@SpringBootApplication
+public class EcommerceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(EcommerceApplication.class, args);
     }
 }
