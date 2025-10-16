@@ -1,11 +1,12 @@
-package com.klu.ecommerce;
+package com.klu.travelmanagement; // ✅ match your actual main package
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
-public class EcommerceApplicationTests {
-    public static void main(String[] args) {
-        SpringApplication.run(EcommerceApplication.class, args);
+@SpringBootTest(classes = TravelManagementApplication.class) // ✅ use your real main class
+class TravelManagementApplicationTests {
+
+    @Test
+    void contextLoads() {
     }
 }
